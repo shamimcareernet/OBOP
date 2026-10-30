@@ -1,0 +1,2245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careernet Middle East | Recruitment Solutions and Executive Search</title>
+    <meta name="description" content="25+ years as a trusted recruitment company providing recruitment solutions, executive search, and RPO services globally.">
+    
+    <link rel="canonical" href="https://careernet.ae/">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:image" content="img/CN_UAE-og.webp" />
+    <meta property="og:url" content="https://careernet.ae/img/CN_UAE-og.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Careernet UAE" />
+    
+    <link rel="icon" type="image/png" href="img/fav-icon.png">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+    
+    <style>
+        /* ==========================================================================
+           1. CSS Variables & Reset
+           ========================================================================== */
+        :root {
+            --primary-blue: #008CB6;
+            --action-yellow: #FCB813;
+            --dark-blue: #06325E;
+            --pure-black: #000000;
+            --light-grey: #F7F7F7;
+            --white: #ffffff;
+            --hover-blue: #007a9f;
+            --premium-gradient: linear-gradient(135deg, var(--dark-blue) 0%, #08406c 50%, var(--primary-blue) 100%);
+            --transition: all 0.3s ease-in-out;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: var(--white);
+            color: var(--pure-black);
+            line-height: 1.6;
+            font-size: 16px;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: var(--light-grey); }
+        ::-webkit-scrollbar-thumb { background: var(--premium-gradient); border-radius: 5px; }
+
+        /* ==========================================================================
+           2. Typography
+           ========================================================================== */
+        h1, h2, h3, h4, h5 { font-weight: 700; }
+        h1 { font-size: 40px; line-height: 1.15; margin-bottom: 20px; letter-spacing: -0.5px; }
+        h2 { font-size: 32px; line-height: 1.2; color: var(--dark-blue); letter-spacing: -0.5px; text-align: center; }
+        h3 { font-size: 24px; line-height: 1.3; color: var(--dark-blue); margin-bottom: 15px; }
+        h4 { font-size: 20px; line-height: 1.4; color: var(--dark-blue); margin-bottom: 10px; }
+        h5 { font-size: 18px; line-height: 1.4; color: var(--dark-blue); }
+        
+        p { margin-bottom: 15px; color: #000000; }
+        
+        a { color: var(--primary-blue); text-decoration: none; font-weight: 700; transition: var(--transition); }
+        a:hover { color: var(--hover-blue); }
+
+        a[href^="mailto:"], a[href^="tel:"] { color: inherit; text-decoration: none; transition: var(--transition); }
+        a[href^="mailto:"]:hover, a[href^="tel:"]:hover { color: var(--action-yellow) !important; }
+
+        .gradient-text { background: var(--premium-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; }
+
+        @media (min-width: 992px) {
+            h1 { font-size: 50px; } 
+            h2 { font-size: 38px; }
+            h3 { font-size: 28px; }
+            h4 { font-size: 22px; }
+            h5 { font-size: 18px; }
+        }
+
+        /* ==========================================================================
+           3. Layout & Structure
+           ========================================================================== */
+        .container { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+        .section { padding: 60px 0; position: relative; overflow: hidden; }
+        .section-alt { background: linear-gradient(to bottom, #ffffff, var(--light-grey)); }
+        
+        .section-gradient { background: var(--premium-gradient); color: var(--white); }
+        .section-gradient h2, .section-gradient h3, .section-gradient h4, .section-gradient p { color: var(--white); }
+        
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .mb-30 { margin-bottom: 30px; } 
+        .mt-30 { margin-top: 30px; }
+
+        .grid { display: grid; gap: 30px; grid-template-columns: 1fr; }
+        .grid-mobile-2 { grid-template-columns: repeat(2, 1fr); gap: 20px; } 
+        .grid-35-65 { display: grid; gap: 30px; grid-template-columns: 1fr; }
+        
+        @media (min-width: 768px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 992px) { 
+            .grid-3 { grid-template-columns: repeat(3, 1fr); } 
+            .grid-4 { grid-template-columns: repeat(4, 1fr); } 
+            .grid-35-65 { grid-template-columns: 35% calc(65% - 30px); }
+        }
+
+        /* Swiper Container & Pagination */
+        .swiper { 
+            padding: 15px 15px 60px 15px !important; 
+            margin: -15px -15px 0 -15px !important; 
+            overflow: hidden; 
+            position: relative;
+        }
+        .swiper-slide { height: auto; display: flex; }
+        .footer-bottom { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+        .swiper-pagination { bottom: 15px !important; text-align: center; width: 100%; }
+        .swiper-pagination-bullet { width: 10px; height: 10px; background-color: #c0c0c0; opacity: 1; transition: var(--transition); }
+        .swiper-pagination-bullet-active { background-color: var(--primary-blue); width: 30px; border-radius: 10px; }
+
+        /* ==========================================================================
+           4. Navigation & Menus
+           ========================================================================== */
+        .navbar { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(15px); border-bottom: 1px solid rgba(0,0,0,0.05); padding: 15px 0; transition: var(--transition); }
+        .nav-container { display: flex; align-items: center; justify-content: space-between; position: relative; }
+        .nav-logo img { height: 35px; width: auto; display: block; }
+        
+        .hamburger { display: flex; flex-direction: column; justify-content: space-around; width: 32px; height: 24px; background: transparent; border: none; cursor: pointer; padding: 0; z-index: 1001; }
+        .hamburger span { width: 100%; height: 3px; background: var(--dark-blue); border-radius: 10px; transition: var(--transition); transform-origin: left center; }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; width: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg); }
+
+        .nav-menu { display: flex; flex-direction: column; position: fixed; top: 65px; left: 100%; width: 100%; height: calc(100vh - 65px); background: var(--white); padding: 30px 24px; gap: 25px; transition: var(--transition); overflow-y: auto; visibility: hidden; }
+        .nav-menu.active { left: 0; visibility: visible; }
+        .nav-link { color: var(--pure-black); font-size: 18px; font-weight: 700; border-bottom: 1px solid var(--light-grey); padding-bottom: 15px; }
+
+        @media (min-width: 992px) {
+            .hamburger { display: none; }
+            .nav-menu { position: static; height: auto; width: auto; flex-direction: row; align-items: center; background: none; padding: 0; visibility: visible; overflow-y: visible; gap: 26px; }
+            .nav-link { font-size: 16px; border-bottom: none; padding-bottom: 0; }
+        }
+
+        /* ==========================================================================
+           5. Buttons & CTAs
+           ========================================================================== */
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 30px; border: none; border-radius: 30px; font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 700; cursor: pointer; transition: var(--transition); width: 100%; text-decoration: none; }
+        @media (min-width: 768px) { .btn { width: auto; } }
+        @media (max-width: 767px) { .mobile-cta-reduce { width: max-content !important; margin: 0; display: inline-block; } }
+        
+        .btn-primary { background: var(--primary-blue); color: var(--white); border: 2px solid var(--primary-blue); }
+        .btn-primary:hover { background: transparent; color: var(--primary-blue); transform: translateY(-3px); border: 2px solid var(--primary-blue); }
+        
+        .btn-secondary { background: var(--action-yellow); color: var(--pure-black); border: 2px solid var(--action-yellow); }
+        .btn-secondary:hover { background: transparent; color: var(--white); border-color: var(--white); transform: translateY(-3px); }
+
+        /* ==========================================================================
+           6. Brand Solutions Section
+           ========================================================================== */
+        .brand-card-modern {
+            background: var(--white); border: 1px solid rgba(0,0,0,0.06); border-radius: 12px;
+            padding: 28px 24px; height: 100%; display: flex; flex-direction: column; transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02); position: relative;
+        }
+        .brand-card-modern:hover { transform: translateY(-4px); box-shadow: 0 12px 25px rgba(0,140,182,0.1); border-color: rgba(0,140,182,0.2); }
+        
+        /* ==========================================================================
+           7. UI Components: Cards, Icons, Overlays
+           ========================================================================== */
+        .card { background: var(--white); border-radius: 16px; padding: 35px 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); transition: var(--transition); border: 1px solid rgba(0,0,0,0.04); width: 100%; height: 100%; display: flex; flex-direction: column; position: relative; overflow: hidden; z-index: 1; text-align: left; text-decoration: none; color: inherit; cursor: pointer;}
+        .card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 140, 182, 0.12); border-color: rgba(0, 140, 182, 0.3); color: inherit; }
+        
+        .card-alt { background: var(--light-grey); border: none; box-shadow: none; cursor: default; }
+        .card-alt:hover { background: var(--white); box-shadow: 0 20px 40px rgba(0, 140, 182, 0.12); border-color: rgba(0, 140, 182, 0.3); }
+
+        #solutions .card { text-align: center; align-items: center; }
+        #solutions .custom-icon { justify-content: center; }
+
+        .custom-icon { margin-bottom: 20px; display: inline-flex; align-items: center; justify-content: flex-start; transition: var(--transition); flex-shrink: 0; font-size: 40px; }
+        #solutions .custom-icon i { background: var(--premium-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block; }
+        .card:hover .custom-icon { transform: scale(1.1); }
+        
+        .read-more-text { display: inline-flex; align-items: center; gap: 5px; font-size: 15px; font-weight: 700; color: var(--primary-blue); transition: var(--transition); margin-top: auto; }
+        .card:hover .read-more-text { color: var(--action-yellow); }
+
+        /* Industries We Serve Grid & Cards */
+        .grid-industries {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .expertise-card { 
+            background: var(--white) !important; 
+            border: 1px solid rgba(0,0,0,0.06) !important; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02) !important; 
+            border-radius: 12px; 
+            padding: 18px 20px !important; 
+            display: flex !important; 
+            align-items: center; 
+            gap: 16px; 
+            transition: var(--transition); 
+            text-align: left; 
+            position: relative; 
+            overflow: hidden; 
+            width: 100%;
+        }
+        .expertise-card .icon-box { 
+            width: 48px; 
+            height: 48px; 
+            flex-shrink: 0; 
+            background: var(--premium-gradient) !important; 
+            border-radius: 10px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 22px; 
+            color: var(--white) !important; 
+        }
+        .expertise-card h4 { 
+            font-size: 15px !important; 
+            margin-bottom: 0 !important; 
+            line-height: 1.4 !important; 
+            color: var(--dark-blue) !important; 
+            font-weight: 700; 
+        }
+        .expertise-card:hover { 
+            transform: translateY(-4px) !important; 
+            box-shadow: 0 12px 25px rgba(0,140,182,0.1) !important; 
+            border-color: rgba(0,140,182,0.2) !important; 
+        }
+
+        /* ==========================================================================
+           8. Hero Banner
+           ========================================================================== */
+        @media (prefers-reduced-motion: no-preference) {
+            @keyframes heroFadeScale {
+                0% { opacity: 0; transform: scale(0.95); }
+                100% { opacity: 1; transform: scale(1); }
+            }
+            @keyframes heroFadeUp {
+                0% { opacity: 0; transform: translateY(30px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
+            @keyframes ctaSlideHighlight {
+                0% { transform: translateY(0); box-shadow: 0 0 0 rgba(252, 184, 19, 0); }
+                50% { transform: translateY(-8px); box-shadow: 0 15px 25px rgba(252, 184, 19, 0.4); }
+                100% { transform: translateY(0); box-shadow: 0 0 0 rgba(252, 184, 19, 0); }
+            }
+            @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+            @keyframes awardsMarquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+            @keyframes blobBounce { 0%, 100% { transform: translateY(0) scale(1); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; } 50% { transform: translateY(-20px) scale(1.05); border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; } }
+        }
+
+        .img-fluid { width: 100%; height: auto; display: block; object-fit: cover; }
+        
+        #hero { padding-top: 80px; padding-bottom: 0; display: flex; align-items: stretch; position: relative; overflow: hidden; }
+        .hero-container { height: 100%; display: flex; align-items: stretch; width: 100%; flex: 1; }
+        .hero-content { align-self: center; padding: 40px 0; }
+        
+        .hero-content h1 { opacity: 0; animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        .hero-content p { opacity: 0; animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards; }
+        .hero-buttons { opacity: 0; animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards; display: flex; gap: 15px; flex-wrap: wrap; margin-top: 30px; }
+        .hero-buttons .btn-secondary { animation: ctaSlideHighlight 1s ease-in-out 1.5s forwards; }
+        
+        .hero-img-container { align-self: flex-end; height: 100%; display: flex; align-items: flex-end; justify-content: center; padding-top: 40px; }
+        .hero-img { opacity: 0; animation: heroFadeScale 1.5s ease-out forwards; max-height: calc(100vh - 120px); border-radius: 20px 20px 0 0; object-fit: contain; object-position: bottom; width: 100%; display: block; margin-bottom: 0; }
+        
+        @media (max-width: 991px) {
+            #hero { height: auto; min-height: auto; padding-top: 100px; }
+            .hero-content h1 { font-size: 36px; text-align: center !important; }
+            .hero-content p { text-align: center !important; margin: 0 auto 30px auto; }
+            .hero-buttons { justify-content: center; }
+            .hero-img-container { align-self: center; padding-top: 20px; }
+            .hero-img { max-height: 50vh; }
+        }
+        
+        .clients .marquee img { cursor: default; }
+        .marquee-wrap { width: 100%; overflow: hidden; background: var(--white); padding: 40px 0; border-top: 1px solid rgba(0,0,0,0.05); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .marquee { display: flex; width: max-content; animation: marquee 35s linear infinite; gap: 100px; align-items: center; padding: 0 50px; }
+        .marquee:hover { animation-play-state: paused; }
+        .marquee img { height: 50px; width: 170px; object-fit: contain; filter: grayscale(100%); opacity: 0.6; transition: all 0.3s ease; cursor: pointer; }
+        .marquee img:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.05); }
+
+        .blob-bg { position: absolute; filter: blur(60px); z-index: 0; opacity: 0.6; animation: blobBounce 10s infinite alternate; }
+        .blob-1 { top: -10%; left: -10%; width: 500px; height: 500px; background: rgba(0, 140, 182, 0.2); }
+        .blob-2 { bottom: -20%; right: -10%; width: 300px; height: 600px; background: rgba(0, 140, 182, 0.2); animation-delay: 2s; }
+
+        /* ==========================================================================
+           9. Stats / Counter Section (3x3 Grid)
+           ========================================================================== */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            text-align: center;
+        }
+        @media (min-width: 576px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (min-width: 992px) {
+            .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        }
+        .stat-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: var(--transition);
+            height: 100%;
+        }
+        .stat-card:hover {
+            background: rgba(255, 255, 255, 0.16);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            border-color: rgba(255, 255, 255, 0.35);
+        }
+        .stat-number {
+            color: var(--action-yellow);
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.1;
+        }
+        .stat-label {
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--white);
+            margin: 0;
+            line-height: 1.4;
+        }
+        .stat-sub {
+            font-size: 13px;
+            opacity: 0.85;
+            font-weight: 400;
+            display: inline-block;
+            margin-top: 4px;
+        }
+
+        /* ==========================================================================
+           10. Global Footprint Component
+           ========================================================================== */
+        .footprint-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .footprint-pill {
+            background: var(--white);
+            border: 1px solid rgba(0, 140, 182, 0.2);
+            border-radius: 40px;
+            padding: 14px 32px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            transition: var(--transition);
+        }
+        .footprint-pill:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 140, 182, 0.15);
+            border-color: var(--primary-blue);
+        }
+        .footprint-pill span {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--dark-blue);
+        }
+        .footprint-flag {
+            width: 28px;
+            height: 19px;
+            border-radius: 3px;
+            object-fit: cover;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .footprint-separator {
+            font-size: 24px;
+            color: #d0d0d0;
+            font-weight: 300;
+        }
+        @media (max-width: 767px) {
+            .footprint-separator { display: none; }
+            .footprint-wrapper { gap: 12px; }
+            .footprint-pill { padding: 12px 20px; width: calc(50% - 6px); justify-content: center; }
+            .footprint-pill span { font-size: 15px; }
+        }
+
+        /* ==========================================================================
+           11. Timeline Styles
+           ========================================================================== */
+        .timeline-c-shape-wrapper {
+            --bg-color: #008cb6;
+            --accent-color: #fcb813;
+            --text-white: #ffffff;
+            --node-color: #003a5c;
+            --node-size: 80px;         
+            --mobile-gap: 280px;
+        }
+
+        .timeline-c-shape-wrapper * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+
+        .timeline-c-shape-wrapper {
+            width: 100%;
+            background-color: transparent;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Lato', sans-serif;
+            user-select: none;
+        }
+
+        .tl-scroll-container {
+            width: 100%;
+            height: 100%;
+            overflow-x: auto;
+            scrollbar-width: none; 
+            -ms-overflow-style: none;
+            -webkit-overflow-scrolling: touch; 
+            display: flex;
+            align-items: center;
+        }
+        .tl-scroll-container::-webkit-scrollbar { display: none; }
+
+        .tl-track {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 50px; 
+        }
+
+        .tl-item {
+            position: relative;
+            width: var(--mobile-gap);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .tl-node {
+            width: var(--node-size);
+            height: var(--node-size);
+            background: var(--text-white);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            border: 8px solid var(--accent-color);
+            transform: scale(0) rotate(-180deg);
+            opacity: 0;
+            transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.5s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .tl-node span {
+            color: var(--node-color);
+            font-size: 20px;
+            font-weight: 900;
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 0.4s ease 0.3s;
+        }
+
+        .tl-item.active .tl-node { opacity: 1; }
+        .tl-item.active .tl-node span { opacity: 1; transform: scale(1); }
+        .tl-item.today .tl-node { background-color: var(--node-color); border-color: var(--text-white); }
+        .tl-item.today .tl-node span { color: var(--text-white); font-size: 16px; }
+
+        .tl-item:nth-child(odd) .tl-node { border-bottom-color: transparent; transform: scale(0) rotate(-180deg); }
+        .tl-item.active:nth-child(odd) .tl-node { transform: scale(1) rotate(45deg); }
+        .tl-item.active:nth-child(odd) .tl-node span { transform: rotate(-45deg); }
+
+        .tl-item:nth-child(even) .tl-node { border-top-color: transparent; transform: scale(0) rotate(180deg); }
+        .tl-item.active:nth-child(even) .tl-node { transform: scale(1) rotate(-45deg); }
+        .tl-item.active:nth-child(even) .tl-node span { transform: rotate(45deg); }
+
+        .tl-content-wrapper {
+            position: absolute;
+            width: 260px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            z-index: 15;
+            pointer-events: none;
+        }
+        .tl-item.active .tl-content-wrapper { opacity: 1; pointer-events: auto; }
+
+        .tl-text h3 {
+            font-size: 14px; 
+            font-weight: 700;
+            margin-bottom: 3px;
+            line-height: 1.15; 
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tl-text p {
+            font-size: 13px; 
+            font-weight: 400;
+            opacity: 0.95;
+            line-height: 1.25; 
+            color: #ffffff;
+            margin-top: 2px;
+        }
+
+        .tl-logo-box {
+            background-color: #ffffff;
+            padding: 6px 10px;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: inline-block;
+            margin: 8px 0;
+            transform: scale(0.8);
+            transition: transform 0.3s ease;
+        }
+        .tl-item.active .tl-logo-box { transform: scale(1); }
+        .tl-logo-box img { height: 22px; width: auto; display: block; max-width: 120px; }
+
+        .tl-line {
+            width: 2px;
+            height: 0px;
+            border-left: 3px dotted rgba(255,255,255,0.7);
+            display: block;
+            margin: 0 auto;
+            transition: height 0.6s ease 0.4s;
+        }
+        .tl-item.active .tl-line { height: 40px; }
+
+        .tl-item:nth-child(odd) .tl-content-wrapper {
+            bottom: 50%; 
+            transform: translateY(-80px);
+            flex-direction: column-reverse; 
+        }
+        .tl-item.active:nth-child(odd) .tl-content-wrapper { transform: translateY(-55px); }
+        
+        .tl-item:nth-child(even) .tl-content-wrapper {
+            top: 50%; 
+            transform: translateY(80px);
+            flex-direction: column; 
+        }
+        .tl-item.active:nth-child(even) .tl-content-wrapper { transform: translateY(55px); }
+
+        .tl-connector {
+            position: absolute;
+            left: 50%; 
+            width: 100%; 
+            height: 80px; 
+            pointer-events: none; z-index: 1;
+        }
+        .tl-connector svg { width: 100%; height: 100%; overflow: visible; }
+        .tl-connector path {
+            fill: none; 
+            stroke: var(--accent-color); 
+            stroke-width: 4; 
+            stroke-dasharray: 10, 6;
+            stroke-linecap: round;
+            filter: drop-shadow(0px 4px 2px rgba(0,0,0,0.1));
+        }
+        .tl-item:nth-child(odd) .tl-connector { top: 50%; } 
+        .tl-item:nth-child(even) .tl-connector { bottom: 50%; }
+        .tl-item:last-child .tl-connector { display: none; }
+
+        @media (max-width: 1023px) {
+            .timeline-c-shape-wrapper {
+                height: auto;
+                padding: 40px 10px;
+                overflow: visible;
+            }
+            .tl-scroll-container {
+                overflow: visible;
+                display: block;
+            }
+            .tl-track {
+                flex-direction: column;
+                height: auto;
+                padding: 0;
+                gap: 40px;
+                position: relative;
+            }
+            .tl-track::before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                bottom: 20px;
+                left: calc(var(--node-size) / 2 - 2px);
+                width: 4px;
+                background-color: rgba(255, 255, 255, 0.2);
+                z-index: 0;
+            }
+            .tl-item {
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 20px;
+            }
+            .tl-node {
+                flex-shrink: 0;
+                z-index: 2;
+            }
+            .tl-connector, .tl-line {
+                display: none !important;
+            }
+            .tl-item:nth-child(odd) .tl-content-wrapper,
+            .tl-item:nth-child(even) .tl-content-wrapper {
+                position: relative;
+                transform: none !important;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                width: calc(100% - var(--node-size) - 20px);
+                bottom: auto;
+                top: auto;
+            }
+            .tl-item.active:nth-child(odd) .tl-content-wrapper,
+            .tl-item.active:nth-child(even) .tl-content-wrapper {
+                transform: translateY(0) !important; 
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .tl-scroll-container {
+                overflow: visible; 
+                justify-content: center;
+            }
+
+            .tl-track {
+                width: 100%;
+                padding: 0 40px;
+                justify-content: space-between; 
+            }
+
+            .tl-item {
+                width: auto; 
+                flex: 1;     
+                min-width: 0; 
+            }
+
+            .tl-content-wrapper {
+                width: 180%; 
+                left: -40%;  
+                max-width: 350px; 
+            }
+            
+            .tl-item.active .tl-line { height: 60px; }
+            
+            .tl-item.active:nth-child(odd) .tl-content-wrapper { transform: translateY(-75px); }
+            .tl-item.active:nth-child(even) .tl-content-wrapper { transform: translateY(75px); }
+        }
+
+        /* ==========================================================================
+           12. The People Behind the Promise (Leadership Section)
+           ========================================================================== */
+        #leadership {
+            background: linear-gradient(180deg, #ffffff 0%, #f7f9fb 100%);
+            padding: 75px 0 85px 0;
+        }
+        .leader-card {
+            background: var(--white);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            text-align: center;
+        }
+        .leader-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 35px rgba(0, 140, 182, 0.12);
+            border-color: rgba(0, 140, 182, 0.25);
+        }
+        .leader-img-wrap {
+            width: 100%;
+            aspect-ratio: 1 / 1.05;
+            background: var(--light-grey);
+            overflow: hidden;
+            position: relative;
+        }
+        .leader-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            transition: transform 0.5s ease;
+            display: block;
+        }
+        .leader-card:hover .leader-img {
+            transform: scale(1.04);
+        }
+        .leader-info {
+            padding: 24px 20px 22px 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: flex-start;
+        }
+        .leader-info h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 4px;
+        }
+        .leader-role {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .leader-desc {
+            font-size: 13.5px;
+            color: #555555;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        /* ==========================================================================
+           13. Forms, Modals & Contact Form 7
+           ========================================================================== */
+        .form-control { 
+            width: 100%; 
+            padding: 16px 20px; 
+            border-radius: 8px; 
+            background: rgba(255, 255, 255, 0.4); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.5); 
+            font-family: 'Lato', sans-serif; 
+            font-size: 16px; 
+            color: var(--pure-black);
+            transition: var(--transition); 
+            margin-bottom: 20px; 
+            outline: none; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .form-control::placeholder { color: rgba(0,0,0,0.6); }
+        .form-control:focus { 
+            border-color: var(--primary-blue); 
+            background: rgba(255, 255, 255, 0.8); 
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,140,182,0.1); 
+        }
+
+        /* Contact Form 7 Overrides */
+        .wpcf7 { width: 100%; }
+        .wpcf7 form { margin: 0; }
+        .wpcf7-form-control-wrap { display: block; width: 100%; position: relative; margin-bottom: 0; }
+        .wpcf7 input.wpcf7-form-control,
+        .wpcf7 textarea.wpcf7-form-control,
+        .wpcf7 select.wpcf7-form-control {
+            width: 100%;
+            padding: 16px 20px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            color: var(--pure-black);
+            transition: var(--transition);
+            outline: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .wpcf7 input.wpcf7-form-control:focus,
+        .wpcf7 textarea.wpcf7-form-control:focus,
+        .wpcf7 select.wpcf7-form-control:focus {
+            border-color: var(--primary-blue);
+            background: rgba(255, 255, 255, 0.8);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,140,182,0.1); 
+        }
+        .wpcf7 input.wpcf7-submit {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 40px;
+            border: 2px solid var(--primary-blue);
+            border-radius: 30px;
+            background: var(--primary-blue);
+            color: var(--white);
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            width: auto;
+        }
+        .wpcf7 input.wpcf7-submit:hover {
+            background: transparent;
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+        .wpcf7-not-valid-tip {
+            color: #dc3545;
+            font-size: 13px;
+            margin-top: 5px;
+            text-align: left;
+            display: block;
+            font-weight: 600;
+        }
+        .wpcf7-response-output {
+            margin: 20px 0 0 0 !important;
+            padding: 12px 20px !important;
+            border-radius: 8px !important;
+            font-size: 15px !important;
+            text-align: center !important;
+        }
+        .wpcf7 form.sent .wpcf7-response-output {
+            border: 1px solid #27c93f !important;
+            background: rgba(39, 201, 63, 0.1) !important;
+            color: #198754 !important;
+        }
+        .wpcf7 form.failed .wpcf7-response-output,
+        .wpcf7 form.invalid .wpcf7-response-output,
+        .wpcf7 form.unaccepted .wpcf7-response-output {
+            border: 1px solid #dc3545 !important;
+            background: rgba(220, 53, 69, 0.1) !important;
+            color: #dc3545 !important;
+        }
+        .wpcf7-spinner { display: none !important; }
+        
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); backdrop-filter: blur(8px); z-index: 2000; display: none; justify-content: center; align-items: center; padding: 20px; opacity: 0; transition: opacity 0.4s ease; }
+        .modal-overlay.active { display: flex; opacity: 1; }
+        .modal-box { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(25px); border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 20px; width: 100%; max-width: 700px; max-height: 90vh; overflow-y: auto; padding: 40px; position: relative; transform: translateY(30px); transition: transform 0.4s ease; box-shadow: 0 25px 50px rgba(0,0,0,0.2); }
+        .modal-box-form { max-width: 850px; }
+        .modal-overlay.active .modal-box { transform: translateY(0); }
+        
+        .modal-close { position: absolute; top: 20px; right: 20px; background: transparent; border: none; font-size: 28px; cursor: pointer; color: var(--dark-blue); transition: var(--transition); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
+        .modal-close:hover { color: var(--white); background: var(--primary-blue); }
+
+        .cs-section { margin-bottom: 20px; }
+        .cs-section h3 { margin-bottom: 18px; line-height: 1.3; }
+        .cs-section h4 { color: #184770; margin-bottom: 10px; font-size: 18px; }
+        .cs-section ul { padding-left: 20px; margin-bottom: 18px; }
+        .cs-section ul li { margin-bottom: 8px; font-size: 15px; color: #000000; }
+
+        /* ==========================================================================
+           14. Footer
+           ========================================================================== */
+        .modern-footer { background-color: var(--pure-black); color: var(--white); padding-top: 60px; position: relative; border-top: 4px solid var(--action-yellow); }
+        .modern-footer .social-links a { 
+            display: inline-flex; align-items: center; justify-content: center; 
+            width: 36px; height: 36px; border-radius: 50%; 
+            background: rgba(255,255,255,0.1); color: var(--white); 
+            transition: var(--transition); text-decoration: none; font-size: 18px;
+        }
+        .modern-footer .social-links a:hover { background: var(--primary-blue); transform: translateY(-3px); }
+
+        .gradient-bullet-list { list-style: none; padding: 0; }
+        .gradient-bullet-list li { display: flex; align-items: flex-start; margin-bottom: 8px; font-size: 16px; color: var(--pure-black); line-height: 1.5;}
+        .gradient-bullet-list li::before { content: ''; flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; background: var(--premium-gradient); margin-right: 15px; margin-top: 7px; }
+
+        @media (max-width: 767px) {
+            #contact .container { padding: 0 10px !important; }
+            .contact-form-wrapper { padding: 50px 20px !important; }
+        }
+
+        @media (max-width: 991px) {
+            #about .grid-35-65 {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 30px;
+            }
+        }
+
+        /* ==========================================================================
+           15. Awards Marquee & Interactive Lightbox with Arrows
+           ========================================================================== */
+        .awards-marquee-wrap { width: 100%; overflow: hidden; padding: 40px 0; position: relative; }
+        .awards-marquee { display: flex; width: max-content; animation: awardsMarquee 35s linear infinite; gap: 60px; align-items: center; padding: 0 25px; }
+        .awards-marquee:hover { animation-play-state: paused; }
+        .awards-marquee img {
+            height: 130px;
+            width: auto;
+            max-width: 280px;
+            object-fit: contain;
+            cursor: zoom-in;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.04));
+        }
+        .awards-marquee img:hover { transform: scale(1.08); filter: drop-shadow(0 10px 15px rgba(0,0,0,0.08)); }
+
+        @media (max-width: 768px) {
+            .awards-marquee img { height: 95px; }
+            .awards-marquee { gap: 35px; }
+            .awards-marquee-wrap { padding: 25px 0; }
+        }
+
+        .blur-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(6, 50, 94, 0.4); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            z-index: 3000; display: none; justify-content: center; align-items: center; opacity: 0;
+            transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .blur-overlay.active { display: flex; opacity: 1; }
+        
+        .zoom-box {
+            position: relative;
+            max-width: 85vw;
+            max-height: 85vh;
+            transform: scale(0.9);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .blur-overlay.active .zoom-box { transform: scale(1); }
+
+        .zoom-img-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: var(--white);
+            padding: 35px 40px 25px 40px;
+            border-radius: 18px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+            border: 1px solid rgba(255,255,255,0.6);
+            min-width: 320px;
+            max-width: 650px;
+        }
+        .zoom-img-container img {
+            max-width: 100%;
+            max-height: 55vh;
+            object-fit: contain;
+            transition: opacity 0.25s ease;
+        }
+        .zoom-caption {
+            margin-top: 18px;
+            font-weight: 700;
+            color: var(--dark-blue);
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .zoom-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--white);
+            color: var(--dark-blue);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            transition: var(--transition);
+            z-index: 3002;
+            user-select: none;
+        }
+        .zoom-nav:hover {
+            background: var(--primary-blue);
+            color: var(--white);
+            transform: translateY(-50%) scale(1.1);
+        }
+        .zoom-prev { left: -25px; }
+        .zoom-next { right: -25px; }
+
+        .zoom-box .modal-close {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            background: var(--white);
+            color: var(--dark-blue);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 3003;
+        }
+        .zoom-box .modal-close:hover { background: var(--primary-blue); color: var(--white); transform: rotate(90deg); }
+
+        @media (max-width: 767px) {
+            .zoom-prev { left: -12px; width: 40px; height: 40px; font-size: 20px; }
+            .zoom-next { right: -12px; width: 40px; height: 40px; font-size: 20px; }
+            .zoom-img-container { padding: 30px 20px 20px 20px; min-width: 270px; }
+            .zoom-box .modal-close { top: -45px; right: 0; }
+        }
+
+        /* ==========================================================================
+           16. Section Overrides
+           ========================================================================== */
+        #expertise { background: var(--white) !important; }
+        #expertise h2 {
+            background: var(--premium-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block;
+        }
+
+        #brands { background: var(--premium-gradient) !important; }
+        #brands h2 { color: var(--white) !important; background: none !important; -webkit-text-fill-color: initial !important; }
+        #brands .card {
+            background: rgb(244, 243, 243) !important; border: 1px solid rgba(255, 255, 255, 0.2) !important; backdrop-filter: blur(10px);
+            color: var(--dark-blue) !important; border-radius: 10px !important; display: flex !important; flex-direction: column !important; padding: 20px !important;
+        }
+        #brands .card p { color: #000000 !important; font-size: 15px !important; margin: 0 !important; flex-grow: 1 !important; }
+        #brands .card img { margin-bottom: 20px !important; object-fit: contain !important; object-position: left !important; }
+        #brands .card:hover { background: rgb(255, 255, 255) !important; border-color: rgba(255, 255, 255, 0.35) !important; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important; }
+
+        #success-stories {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Careernet Middle East",
+      "url": "https://careernet.ae/",
+      "logo": "https://careernet.ae/img/CN_Logo_Color_Light_BG.svg",
+      "image": "https://careernet.ae/img/about-careernet.webp",
+      "description": "Careernet Middle East is a holistic talent solutions and recruitment company providing executive search, staffing, RPO, assessment-led hiring, and recruitment services across the Middle East.",
+      "foundingDate": "1999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Meydan Grandstand, 6th Floor",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+971-4-836-9591",
+        "contactType": "customer support",
+        "email": "sales@careernet.ae",
+        "areaServed": "Middle East",
+        "availableLanguage": ["English"]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/wearecareernet/",
+        "https://www.instagram.com/wearecareernet/",
+        "https://www.youtube.com/@CareernetIndia"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Talent Solutions Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Executive Search" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Recruitment Services" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Staffing Solutions" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "RPO Services" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Leadership Hiring" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Assessment-led Hiring" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Employer Branding" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nationalization Hiring" } }
+        ]
+      }
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="img/CN_Logo_Color_Light_BG.svg" alt="Careernet">
+            </a>
+            
+            <button class="hamburger" id="mobileToggle" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#brands" class="nav-link">Our Brands</a>
+                <a href="#timeline-section" class="nav-link">Our Journey</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#expertise" class="nav-link">Industries</a>
+                <a href="#success-stories" class="nav-link">Success Stories</a>
+                <a href="#leadership" class="nav-link">Leadership</a>
+                
+                <a href="#contact" class="btn btn-primary mobile-cta-reduce" style="padding: 10px 24px; min-height: auto; font-size: 15px;">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section section-gradient">
+        <div class="blob-bg blob-1"></div>
+        <div class="blob-bg blob-2"></div>
+        
+        <div class="container hero-container" style="position: relative; z-index: 2;">
+            <div class="grid grid-2" style="height: 100%; width: 100%;">
+                <div class="hero-content">
+                    <h1 style="color: var(--white); text-align: left;">Making holistic talent solutions happen in the Middle East</h1>
+                    <p style="font-size: 20px; opacity: 0.9; margin-bottom: 0; max-width: 500px; font-weight: 400; text-align: left; color: var(--white);">Helping global organizations optimize the sourcing, assessing, and hiring of early-career to CXO talent for 25+ years</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#modal-hire" class="btn btn-secondary popup-trigger" style="width: auto;">Hire Great Talent</a>
+                    </div>
+                </div>
+                <div class="hero-img-container">
+                    <img src="img/banner.webp" alt="Great Talent Platform" class="img-fluid hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container" data-aos="fade-in">
+            <div class="grid-35-65 align-items-center">
+                <div data-aos="fade-in">
+                    <img src="img/about-careernet.webp" alt="About Careernet" class="img-fluid" style="border-radius: 20px;">
+                </div>
+                <div data-aos="fade-in" data-aos-delay="200" class="text-left">
+                    <h2 class="mb-30 gradient-text text-left" style="text-align: left;">25+ years of making great talent happen</h2>
+                    <div style="font-size: 16px; color: var(--pure-black);">
+                        <p>Since 1999, we have been shaping how organizations find, grow, and keep the people who move them forward. One belief has driven that work from the very beginning: <strong>That the world needs great talent.</strong></p>
+                        
+                        <p>And so we have been making it happen everywhere, from the first desks of a startup to the boardrooms of global enterprises. In fintech, in SaaS, in manufacturing, in consumer internet, and in sectors still taking shape.</p>
+                        
+                        <p>The technology around us kept changing. So did the markets. But the need for great talent never did. It arrived in different forms, so you met us under different names.</p>
+                        
+                        <p>One helped you shape a team from the ground up. Another helped you evaluate the right talent. A third found the leader who disrupted the status quo. And the fourth helped the world see who you truly are as an employer.</p>
+                        
+                        <p>Each name earned its place, but none of them stood apart. Because underneath the four names was always the same belief, carried by one family, across nearly three decades.</p>
+                        
+                        <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.08);">
+                            <h4 style="margin-bottom: 4px; color: var(--dark-blue); font-size: 20px; font-weight: 700;">The Careernet Group</h4>
+                            <p style="font-size: 17px; font-weight: 700; color: var(--primary-blue); margin-bottom: 4px;">Because the world needs great talent®</p>
+                            <p style="font-size: 15px; color: #555555; margin-bottom: 0;">Our group brands make it happen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section id="brands" class="section">
+        <div class="container">
+            <div class="text-center mb-30" data-aos="fade-in">
+                <h2>Four specialized brands, one unified direction</h2>
+            </div>
+            
+            <div class="row g-4 justify-content-center py-2" data-aos="fade-in" data-aos-delay="200">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="#modal-brand-1" class="card popup-trigger text-decoration-none h-100">
+                        <img src="img/CN_Logo_Color_Light_BG.svg" alt="Careernet" style="height: 35px;">
+                        <p>Holistic talent solutions</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="#modal-brand-3" class="card popup-trigger text-decoration-none h-100">
+                        <img src="img/HirePro_Full-color.svg" alt="HirePro" style="height: 32px;">
+                        <p>AI-powered recruitment automation at scale</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="#modal-brand-2" class="card popup-trigger text-decoration-none h-100">
+                        <img src="img/LH-Logo-without-by-line.svg" alt="Longhouse" style="height: 35px;">
+                        <p>Executive search and leadership advisory</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="#modal-brand-4" class="card popup-trigger text-decoration-none h-100">
+                        <img src="img/MYCN_Color_Without_Byline.svg" alt="MyCareernet" style="height: 35px;">
+                        <p>Employer branding and talent community engagement</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section (Making innovative recruitment happen since 1999) -->
+    <section id="timeline-section" class="section section-gradient" style="padding: 70px 0 50px 0;">
+        <div class="container text-center mb-4">
+            <h2 style="color: var(--white); margin-bottom: 25px;" data-aos="fade-in">Making innovative recruitment happen since 1999</h2>
+        </div>
+        
+        <div class="timeline-c-shape-wrapper" data-aos="fade-in" data-aos-delay="200">
+            <div class="tl-scroll-container" id="scrollContainer">
+                <div class="tl-track" id="track"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section (Our impact, by the numbers - 3x3 Grid) -->
+    <section class="section section-gradient">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-in">
+                <h2 style="color: var(--white); margin-bottom: 10px;">Our impact, by the numbers</h2>
+            </div>
+            <div class="stats-grid" data-aos="fade-in" data-aos-delay="200">
+                <div class="stat-card">
+                    <h3 class="stat-number"><span class="counter" data-target="25">0</span>+</h3>
+                    <p class="stat-label">years of recruiting excellence</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number"><span class="counter" data-target="2">0</span>K+</h3>
+                    <p class="stat-label">Careernetizens<br><span class="stat-sub">(70% diversity)</span></p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number"><span class="counter" data-target="20000">0</span>+</h3>
+                    <p class="stat-label">permanent hires annually</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number"><span class="counter" data-target="1">0</span>K+</h3>
+                    <p class="stat-label">enterprise customers<br><span class="stat-sub">(including 150+ Fortune 500)</span></p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number"><span class="counter" data-target="200">0</span>+</h3>
+                    <p class="stat-label">Global Capability Centers scaled<br><span class="stat-sub">(50+ greenfield centers)</span></p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number"><span class="counter" data-target="100">0</span>M+</h3>
+                    <p class="stat-label">assessments delivered globally</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number"><span class="counter" data-target="10">0</span>M+</h3>
+                    <p class="stat-label">candidate network</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number"><span class="counter" data-target="10">0</span>+</h3>
+                    <p class="stat-label">locations around the world</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number"><span class="counter" data-target="10">0</span>M+</h3>
+                    <p class="stat-label">sq ft of workspace<br><span class="stat-sub">across 13 Indian cities (via IndiQube)</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Footprint Section -->
+    <section id="global-footprint" class="section section-alt" style="padding: 55px 0;">
+        <div class="container text-center" data-aos="fade-in">
+            <h2 class="gradient-text mb-3" style="font-size: 32px; display: inline-block;">Our global footprint</h2>
+            <div class="footprint-wrapper">
+                <div class="footprint-pill">
+                    <img src="https://flagcdn.com/w40/in.png" alt="India Flag" class="footprint-flag">
+                    <span>India</span>
+                </div>
+                <div class="footprint-separator">|</div>
+                <div class="footprint-pill">
+                    <img src="https://flagcdn.com/w40/ae.png" alt="Middle East Flag" class="footprint-flag">
+                    <span>Middle East</span>
+                </div>
+                <div class="footprint-separator">|</div>
+                <div class="footprint-pill">
+                    <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" class="footprint-flag">
+                    <span>USA</span>
+                </div>
+                <div class="footprint-separator">|</div>
+                <div class="footprint-pill">
+                    <img src="https://flagcdn.com/w40/ph.png" alt="Philippines Flag" class="footprint-flag">
+                    <span>Philippines</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+ <!--    <section id="solutions" class="section" style="background: var(--white);">
+        <div class="container text-center">
+            <div data-aos="fade-in">
+                <h2 class="gradient-text" style="display: inline-block;">We make it happen at every phase of the recruitment supply chain</h2>
+            </div>
+            
+            <div class="grid grid-3" style="margin-top: 30px; text-align: left;" data-aos="fade-in" data-aos-delay="200">
+                <div class="card card-alt">
+                    <div class="custom-icon"><i class="bi bi-arrow-left-right"></i></div>
+                    <h4 style="font-size: 18px;">Recruitment Process Outsourcing (RPO)</h4>
+                    <p style="font-size: 15px; margin: 0; flex-grow: 1;">SLA-driven niche to high-volume hiring</p>
+                </div>
+                <div class="card card-alt">
+                    <div class="custom-icon"><i class="bi bi-person-check"></i></div>
+                    <h4 style="font-size: 18px;">Permanent hiring</h4>
+                    <p style="font-size: 15px; margin: 0; flex-grow: 1;">The best talent for a single role or bulk mandates</p>
+                </div>
+                <div class="card card-alt">
+                    <div class="custom-icon"><i class="bi bi-people"></i></div>
+                    <h4 style="font-size: 18px;">IT and professional staffing</h4>
+                    <p style="font-size: 15px; margin: 0; flex-grow: 1;">Scalable teams with operational ownership</p>
+                </div>
+                <div class="card card-alt">
+                    <div class="custom-icon"><i class="bi bi-gem"></i></div>
+                    <h4 style="font-size: 18px;">Premium Hiring as a Service (PHaaS)</h4>
+                    <p style="font-size: 15px; margin: 0; flex-grow: 1;">Sourcing and screening with first-round interviews</p>
+                </div>
+                <div class="card card-alt">
+                    <div class="custom-icon"><i class="bi bi-file-earmark-text"></i></div>
+                    <h4 style="font-size: 18px;">Skill assessments</h4>
+                    <p style="font-size: 15px; margin: 0; flex-grow: 1;">Fraud-proof technical and functional evaluations</p>
+                </div>
+                <div class="card card-alt">
+                    <div class="custom-icon"><i class="bi bi-person-video"></i></div>
+                    <h4 style="font-size: 18px;">Interviewing solution</h4>
+                    <p style="font-size: 15px; margin: 0; flex-grow: 1;">Human and agentic AI interviews</p>
+                </div>
+                <div class="card card-alt">
+                    <div class="custom-icon"><i class="bi bi-briefcase"></i></div>
+                    <h4 style="font-size: 18px;">Executive search</h4>
+                    <p style="font-size: 15px; margin: 0; flex-grow: 1;">CXO and senior leadership hiring across sectors</p>
+                </div>
+                <div class="card card-alt">
+                    <div class="custom-icon"><i class="bi bi-compass"></i></div>
+                    <h4 style="font-size: 18px;">Leadership advisory</h4>
+                    <p style="font-size: 15px; margin: 0; flex-grow: 1;">Counsel on succession planning and inclusive leadership</p>
+                </div>
+                <div class="card card-alt">
+                    <div class="custom-icon"><i class="bi bi-megaphone"></i></div>
+                    <h4 style="font-size: 18px;">Employer branding</h4>
+                    <p style="font-size: 15px; margin: 0; flex-grow: 1;">Strong visibility across early-career to leadership professionals</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Industries We Serve Section -->
+    <section id="expertise" class="section" style="text-align: center;">
+        <div class="blob-bg blob-1"></div>
+        <div class="blob-bg blob-2"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+            <h2 data-aos="fade-in" class="mb-30" style="padding-bottom: 20px;">Industries we serve</h2>
+            
+            <div class="grid-industries" data-aos="fade-in" data-aos-delay="200">
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-globe2"></i></div>
+                    <h4>Multinational giants</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-rocket-takeoff"></i></div>
+                    <h4>Global tech startups and scaleups</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-lightbulb"></i></div>
+                    <h4>India’s innovation leaders</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-diagram-3"></i></div>
+                    <h4>GCCs</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-cloud-arrow-up"></i></div>
+                    <h4>IT and offshoring</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-cpu"></i></div>
+                    <h4>Technology R&D</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-code-slash"></i></div>
+                    <h4>SaaS / Deep tech</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-phone"></i></div>
+                    <h4>Consumer internet</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-bank"></i></div>
+                    <h4>FinTech and financial services</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-gear-wide-connected"></i></div>
+                    <h4>Manufacturing and infrastructure</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-briefcase"></i></div>
+                    <h4>Enterprise / B2B business</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-cart3"></i></div>
+                    <h4>Consumer / B2C business</h4>
+                </div>
+                <div class="expertise-card">
+                    <div class="icon-box"><i class="bi bi-stars"></i></div>
+                    <h4>Emerging sectors</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Wrap -->
+    <div class="marquee-wrap clients">
+        <div class="text-center mb-30" data-aos="fade-in">
+            <h2 class="gradient-text" style="font-size: 28px;">Trusted by leading organizations globally</h2>
+        </div>
+        <div class="marquee" data-aos="fade-in">
+            <img src="img/Mercedes-Benz.svg" alt="Mercedes-Benz">
+            <img src="img/Ford.svg" alt="Ford">
+            <img src="img/Deutsche-Bank.svg" alt="Deutsche Bank">
+            <img src="img/HSBC.svg" alt="HSBC">
+            <img src="img/Koch-Industries.svg" alt="Koch Industries">
+            
+            <img src="img/Mercedes-Benz.svg" alt="Mercedes-Benz">
+            <img src="img/Ford.svg" alt="Ford">
+            <img src="img/Deutsche-Bank.svg" alt="Deutsche Bank">
+            <img src="img/HSBC.svg" alt="HSBC">
+            <img src="img/Koch-Industries.svg" alt="Koch Industries">
+        </div>
+    </div>
+
+    <!-- Awards Section -->
+    <section class="section section-alt text-center" style="padding-left: 0; padding-right: 0;">
+        <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(247,247,247,0.92); z-index: 0;"></div>
+        <div style="position: relative; z-index: 1; width: 100%;">
+            <h2 class="gradient-text" data-aos="fade-in" style="padding-bottom: 15px;">Awards and recognitions</h2>
+            
+            <div class="awards-marquee-wrap" data-aos="fade-in" data-aos-delay="200">
+                <div class="awards-marquee">
+                    <img src="img/GPTW_2026-2027_Logo_SVG.webp" alt="Great Place To Work" class="zoomable-award">
+                    <img src="img/LinkedIn_Talent_2025-Finalist.webp" alt="LinkedIn Talent Awards" class="zoomable-award">
+                    <img src="img/ISO27001_2013_GDPR_Certified_Company.webp" alt="ISO Compliant" class="zoomable-award">
+                    <img src="img/ET.png" alt="The Economic Times AI Awards 2025" class="zoomable-award">
+                    <img src="img/Eco.png" alt="The Times Group Best Organization for Women 2024" class="zoomable-award">
+                    <img src="img/BB.png" alt="The Economic Times Best Brand 2022" class="zoomable-award">
+                    
+                    <img src="img/GPTW_2026-2027_Logo_SVG.webp" alt="Great Place To Work" class="zoomable-award">
+                    <img src="img/LinkedIn_Talent_2025-Finalist.webp" alt="LinkedIn Talent Awards" class="zoomable-award">
+                    <img src="img/ISO27001_2013_GDPR_Certified_Company.webp" alt="ISO Compliant" class="zoomable-award">
+                    <img src="img/ET.png" alt="The Economic Times AI Awards 2025" class="zoomable-award">
+                    <img src="img/Eco.png" alt="The Times Group Best Organization for Women 2024" class="zoomable-award">
+                    <img src="img/BB.png" alt="The Economic Times Best Brand 2022" class="zoomable-award">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories (Updated 5 Stories) -->
+    <section class="section" id="success-stories">
+        <div class="container">
+            <h2 class="text-center mb-30 gradient-text" style="display: block;" data-aos="fade-in">Success Stories</h2>
+            
+            <div class="swiper init-swiper text-left" data-aos="fade-in" data-aos-delay="200">
+                <script type="application/json" class="swiper-config">
+                    { 
+                        "loop": true, 
+                        "speed": 1000, 
+                        "autoplay": { "delay": 4000, "disableOnInteraction": false }, 
+                        "slidesPerView": 1, 
+                        "spaceBetween": 20, 
+                        "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true }, 
+                        "breakpoints": { 
+                            "768": { "slidesPerView": 2, "spaceBetween": 30 }, 
+                            "1024": { "slidesPerView": 3, "spaceBetween": 30 } 
+                        } 
+                    }
+                </script>
+                <div class="swiper-wrapper py-2 align-items-stretch">
+                    
+                    <!-- Story 1 -->
+                    <div class="swiper-slide">
+                        <a href="#cs-gcc" data-modal="cs-gcc" class="card card-alt popup-trigger text-decoration-none w-100" style="padding: 0; color: inherit;">
+                            <img src="img/the-world-only end-to-end-debt.webp" alt="Industrial Sector GCC Scaling" class="img-fluid" style="height: 200px; border-radius: 16px 16px 0 0; object-fit: cover;">
+                            <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                                <p style="font-weight: 700; font-size: 18px; margin-bottom: 20px; color: var(--pure-black); flex-grow: 1;">How a leading global player in the industrial sector scaled the growth of its India GCC</p>
+                                <span class="read-more-text">Read More</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Story 2 -->
+                    <div class="swiper-slide">
+                        <a href="#cs-fresher" data-modal="cs-fresher" class="card card-alt popup-trigger text-decoration-none w-100" style="padding: 0; color: inherit;">
+                            <img src="img/Ed-Tech.webp" alt="Blue Yonder Fresher Hiring" class="img-fluid" style="height: 200px; border-radius: 16px 16px 0 0; object-fit: cover;">
+                            <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                                <p style="font-weight: 700; font-size: 18px; margin-bottom: 20px; color: var(--pure-black); flex-grow: 1;">How Blue Yonder scaled fresher hiring in India through a digital-first talent model</p>
+                                <span class="read-more-text">Read More</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Story 3 -->
+                    <div class="swiper-slide">
+                        <a href="#cs-consulting" data-modal="cs-consulting" class="card card-alt popup-trigger text-decoration-none w-100" style="padding: 0; color: inherit;">
+                            <img src="img/a-global-leader-in-sports.webp" alt="Internship Program Engagement" class="img-fluid" style="height: 200px; border-radius: 16px 16px 0 0; object-fit: cover;">
+                            <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                                <p style="font-weight: 700; font-size: 18px; margin-bottom: 20px; color: var(--pure-black); flex-grow: 1;">How a global consulting leader became an employer of choice for interns in India</p>
+                                <span class="read-more-text">Read More</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Story 4 -->
+                    <div class="swiper-slide">
+                        <a href="#cs-crossborder" data-modal="cs-crossborder" class="card card-alt popup-trigger text-decoration-none w-100" style="padding: 0; color: inherit;">
+                            <img src="img/Tech-Hiring.webp" alt="Cross-Border Leadership Search" class="img-fluid" style="height: 200px; border-radius: 16px 16px 0 0; object-fit: cover;">
+                            <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                                <p style="font-weight: 700; font-size: 18px; margin-bottom: 20px; color: var(--pure-black); flex-grow: 1;">How Asia’s leading e-commerce company found its supply chain leader through a cross-border search</p>
+                                <span class="read-more-text">Read More</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Story 5 -->
+                    <div class="swiper-slide">
+                        <a href="#cs-interview-fraudproof" data-modal="cs-interview-fraudproof" class="card card-alt popup-trigger text-decoration-none w-100" style="padding: 0; color: inherit;">
+                            <img src="img/the-world-only end-to-end-debt.webp" alt="Fraud-Proof Global Interviews" class="img-fluid" style="height: 200px; border-radius: 16px 16px 0 0; object-fit: cover;">
+                            <div style="padding: 30px; display: flex; flex-direction: column; flex-grow: 1;">
+                                <p style="font-weight: 700; font-size: 18px; margin-bottom: 20px; color: var(--pure-black); flex-grow: 1;">A top digital engineering MNC executes 100% fraud-proof interviews across 4 time zones</p>
+                                <span class="read-more-text">Read More</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The People Behind the Promise Section -->
+    <section id="leadership" class="section">
+        <div class="container text-center">
+            <h2 class="gradient-text mb-2" data-aos="fade-in">The people behind the promise</h2>
+            <p style="max-width: 650px; margin: 0 auto 40px auto; color: #555555; font-size: 17px;" data-aos="fade-in" data-aos-delay="100">
+                Driven by visionary leadership with 25+ years of making great talent happen across borders.
+            </p>
+            
+            <div class="row g-4 justify-content-center" data-aos="fade-in" data-aos-delay="200">
+                <!-- Leader 1: Anshuman Das -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="leader-card">
+                        <div class="leader-img-wrap">
+                            <img src="https://testing.careernet.ae/wp-content/uploads/2026/09/Anshuman.webp" alt="Anshuman Das" class="leader-img">
+                        </div>
+                        <div class="leader-info">
+                            <h4>Anshuman Das</h4>
+                            <p class="leader-role">Co-Founder & CEO</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leader 2: Rishi Das -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="leader-card">
+                        <div class="leader-img-wrap">
+                            <img src="https://testing.careernet.ae/wp-content/uploads/2026/09/rishi.webp" alt="Rishi Das" class="leader-img">
+                        </div>
+                        <div class="leader-info">
+                            <h4>Rishi Das</h4>
+                            <p class="leader-role">Co-Founder</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leader 3: Neelabh Shukla -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="leader-card">
+                        <div class="leader-img-wrap">
+                            <img src="https://testing.careernet.ae/wp-content/uploads/2026/09/neelabh.webp" alt="Neelabh Shukla" class="leader-img">
+                        </div>
+                        <div class="leader-info">
+                            <h4>Neelabh Shukla</h4>
+                            <p class="leader-role">Chief Business Officer</p>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leader 4: Pasupathi Sankaran -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="leader-card">
+                        <div class="leader-img-wrap">
+                            <img src="https://testing.careernet.ae/wp-content/uploads/2026/09/pasu.webp" alt="Pasupathi Sankaran" class="leader-img">
+                        </div>
+                        <div class="leader-info">
+                            <h4>Pasupathi Sankaran</h4>
+                            <p class="leader-role">Chief Operating Officer</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-gradient" style="position: relative; overflow: hidden; padding-bottom: 0;">
+        <div class="container" data-aos="fade-in" style="max-width: 1000px;">
+            <div class="text-center mb-4">
+                <h2 style="color: white; margin-bottom: 10px;">We are one. On for tomorrow.</h2>
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 18px; margin-bottom: 0; font-weight: 400;">Let’s make great talent happen together</p>
+            </div>
+            <div class="contact-form-wrapper" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 24px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.2); padding: 50px 40px; margin-bottom: 50px;">
+                [contact-form-7 id="corporate-contact-form" title="Corporate Contact Form"]
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white modern-footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-lg-3 pe-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <img src="img/CN_Logo_Color_in_Dark_BG.svg" alt="Careernet" height="40" class="mb-4">
+                        <p class="text-white opacity-75 small">Making holistic talent solutions happen in the Middle East. Optimizing sourcing, assessing, and hiring of early-career to CXO talent worldwide.</p>
+                        <div class="mt-4">
+                            <div class="d-flex gap-3 mt-3 social-links">
+                                <a href="https://www.linkedin.com/showcase/careernet-middle-east/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.instagram.com/careernetconsulting/" target="_blank"><i class="bi bi-instagram"></i></a>
+                                <a href="https://www.youtube.com/channel/UCcZeB6yJjvS4LlL1cO3KL-g" target="_blank"><i class="bi bi-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2" data-aos="fade-up" data-aos-delay="200">
+                        <h5 class="text-white mb-4 fs-6 text-uppercase" style="letter-spacing: 1px;">Quick Links</h5>
+                        <ul class="list-unstyled d-flex flex-column gap-3 small">
+                            <li><a href="#about" class="text-white opacity-75 text-decoration-none transition">About Us</a></li>
+                            <li><a href="#brands" class="text-white opacity-75 text-decoration-none transition">Our Brands</a></li>
+                            <li><a href="#timeline-section" class="text-white opacity-75 text-decoration-none transition">Our Journey</a></li>
+                            <li><a href="#solutions" class="text-white opacity-75 text-decoration-none transition">Solutions</a></li>
+                            <li><a href="#expertise" class="text-white opacity-75 text-decoration-none transition">Industries</a></li>
+                            <li><a href="#success-stories" class="text-white opacity-75 text-decoration-none transition">Success Stories</a></li>
+                            <li><a href="#leadership" class="text-white opacity-75 text-decoration-none transition">Leadership</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2" data-aos="fade-up" data-aos-delay="300">
+                        <h5 class="text-white mb-4 fs-6 text-uppercase" style="letter-spacing: 1px;">Our Brands</h5>
+                        <ul class="list-unstyled d-flex flex-column gap-3 small mb-4">
+                            <li><a href="#modal-brand-1" class="popup-trigger text-white opacity-75 text-decoration-none transition">Careernet</a></li>
+                            <li><a href="#modal-brand-3" class="popup-trigger text-white opacity-75 text-decoration-none transition">HirePro</a></li>
+                            <li><a href="#modal-brand-2" class="popup-trigger text-white opacity-75 text-decoration-none transition">Longhouse</a></li>
+                            <li><a href="#modal-brand-4" class="popup-trigger text-white opacity-75 text-decoration-none transition">MyCareernet</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <h5 class="text-white mb-4 fs-6 text-uppercase" style="letter-spacing: 1px;">Contact Us</h5>
+                        <ul class="list-unstyled d-flex flex-column gap-3 small opacity-75 text-white">
+                            <li class="d-flex align-items-start"><i class="bi bi-envelope me-2 text-warning mt-1"></i> <a href="mailto:sales@careernet.ae" class="contact-link text-white">sales@careernet.ae</a></li>
+                            <li class="d-flex align-items-start"><i class="bi bi-telephone me-2 text-warning mt-1"></i> <a href="tel:+97148369591" class="contact-link text-white">+971 4 836 9591</a></li>
+                            <li class="d-flex align-items-start"><i class="bi bi-geo-alt me-2 text-warning mt-1"></i> Meydan Grandstand, 6th Floor, Dubai, U.A.E.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center" style="padding-bottom: 20px;">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-center gap-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <a href="#modal-privacy" class="popup-trigger text-white opacity-75 text-decoration-none small transition hover-white">Privacy Policy</a>
+                    <a href="#modal-terms" class="popup-trigger text-white opacity-75 text-decoration-none small transition hover-white">Terms of Service</a>
+                </div>
+                <p class="opacity-75 small mb-0 text-white" data-aos="fade-up" data-aos-delay="200">© <span id="dynamicYear"></span> Careernet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals Container -->
+    <div id="modals-container">
+        
+        <!-- Award Lightbox Gallery Modal with Left & Right Arrows -->
+        <div class="blur-overlay" id="modal-image-zoom">
+            <div class="zoom-box">
+                <button class="modal-close" id="zoomCloseBtn" aria-label="Close Lightbox">×</button>
+                <button class="zoom-nav zoom-prev" id="zoomPrevBtn" aria-label="Previous Award">&#10094;</button>
+                <div class="zoom-img-container">
+                    <img id="zoomed-award-img" src="" alt="Award Target View">
+                    <div class="zoom-caption" id="zoomed-award-caption"></div>
+                </div>
+                <button class="zoom-nav zoom-next" id="zoomNextBtn" aria-label="Next Award">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Hire Talent Popup Modal (Contact Form 7) -->
+        <div class="modal-overlay" id="modal-hire">
+            <div class="modal-box modal-box-form">
+                <button class="modal-close">×</button>
+                <h3 class="gradient-text" style="text-align: center; display: block; margin-bottom: 10px; font-size: 28px;">Hire great talent</h3>
+                <p style="font-size: 15px; margin-bottom: 25px; color: #555; text-align: center;">Share your details below, and we will reach out to discuss your hiring needs.</p>
+                
+                [contact-form-7 id="hire-form" title="Hire Great Talent"]
+            </div>
+        </div>
+
+        <!-- Brand Modals -->
+        <div class="modal-overlay" id="modal-brand-1">
+            <div class="modal-box modal-box-form">
+                <button class="modal-close">×</button>
+                <img src="img/CN_Logo_Color_Light_BG.svg" alt="Careernet" style="height: 40px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+                <div class="cs-section text-left">
+                    <p>Careernet is India’s leading holistic talent solutions provider. Because the world needs great talent, we make it happen with the unified strength of Careernet, HirePro, Longhouse, and MyCareernet.</p>
+                    <p>Founded in 1999, the company’s mission is to shape exceptional teams with scalable, holistic talent solutions while helping candidates realize their dream careers. We help companies acquire the best talent by making their recruitment experience seamless with technology innovations. Today, we serve over 1,000 active top employers and have more than 2,000 employees with dedicated offices in multiple locations across India, the Middle East, the US, and the Philippines.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-overlay" id="modal-brand-2">
+            <div class="modal-box">
+                <button class="modal-close">×</button>
+                <img src="img/LH-Logo-without-by-line.svg" alt="Longhouse" style="height: 40px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+                <div class="cs-section text-left">
+                    <p>Longhouse is a specialized executive search and leadership advisory firm with a mission to enable companies who think digital. With deep expertise in the high-growth digital sector, emerging technologies, and the consumer internet space, we hire key talent for these organizations to make them future-ready.</p>
+                    <p>Since our inception in 2009, we have been the trusted partner of leading ventures, helping them define critical leadership roles and acquire top talent, from their early stages to their current positions of strength. Over the years, we have helped companies in various growth stages hire critical talent, adapting to the changing needs of their businesses and markets.</p>
+                    <p>The world needs great talent, and we make it happen with the unified strength of our group brands: Careernet, HirePro, Longhouse, and MyCareernet.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-overlay" id="modal-brand-3">
+            <div class="modal-box">
+                <button class="modal-close">×</button>
+                <img src="img/HirePro_Full-color.svg" alt="HirePro" style="height: 40px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+                <div class="cs-section text-left">
+                    <p>Because the world needs great talent, we make it happen with the unified strength of Careernet, HirePro, Longhouse, and MyCareernet. As an AI-powered recruitment platform, at HirePro, Fearless Hiring is at the heart of everything we do. Our mission is to make the unpredictable world of hiring predictable with our profound expertise, AI technology and impeccable service.</p>
+                    <p>Established in 2004 and headquartered in Bengaluru, India, we offer pre-eminent technology platforms and allied services to companies that require expert support to navigate the talent landscape. Serving as the partner of choice for businesses worldwide, we help fearlessly navigate the intricate phases of the recruitment supply chain.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-overlay" id="modal-brand-4">
+            <div class="modal-box">
+                <button class="modal-close">×</button>
+                <img src="img/MYCN_Color_Without_Byline.svg" alt="MyCareernet" style="height: 40px; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto;">
+                <div class="cs-section text-left">
+                    <p>MyCareernet, a digital destination from Careernet powered by HirePro, helps organizations strengthen their employer brand, engage with diverse candidate communities, and hire great talent through a combination of advanced technology and seamless service. Introduced in 2022, we also serve as a career destination for job seekers, offering opportunities through hiring and prize contests, curated networking and career events, and thousands of job openings from leading employers.</p>
+                    <p>The world needs great talent, and we make it happen with the unified strength of our group brands: Careernet, HirePro, Longhouse, and MyCareernet.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Stories Modals (5 Detailed Case Studies) -->
+        
+        <!-- Case Study 1 Modal -->
+        <div class="modal-overlay" id="cs-gcc">
+            <div class="modal-box">
+                <button class="modal-close">×</button>
+                <div class="cs-section">
+                    <h3 class="gradient-text">How a leading global player in the industrial sector scaled the growth of its India GCC</h3>
+                    <h4>The challenge</h4>
+                    <ul>
+                        <li>Rapidly build and scale an India Global Capability Center (GCC) across critical engineering, IoT, and software disciplines</li>
+                        <li>Overcome low candidate brand awareness compared to pure-play tech conglomerates in competitive Indian metros</li>
+                        <li>Address high talent demand, stringent skill calibration, and tight ramp-up timelines</li>
+                    </ul>
+                    <h4>Our solutions</h4>
+                    <ul>
+                        <li>Combined integrated employer branding campaigns with aggressive multi-channel talent acquisition pipelines</li>
+                        <li>Deployed an agile RPO framework with dedicated recruiter pods, on-site leads, and specialized market mapping</li>
+                        <li>Conducted salary benchmarking and rigorous competency assessments to elevate conversion and joining ratios</li>
+                    </ul>
+                    <h4>The impact</h4>
+                    <ul>
+                        <li>Scaled headcount from inception to hundreds of specialized engineers within tight delivery milestones</li>
+                        <li>Established the multinational giant as a preferred employer brand across major Indian technology hubs</li>
+                        <li>Transformed the India center from initial support into a key driver of global engineering innovation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 2 Modal -->
+        <div class="modal-overlay" id="cs-fresher">
+            <div class="modal-box">
+                <button class="modal-close">×</button>
+                <div class="cs-section">
+                    <h3 class="gradient-text">How Blue Yonder scaled fresher hiring in India through a digital-first talent model</h3>
+                    <h4>The challenge</h4>
+                    <ul>
+                        <li>Expand engineering and R&D capability centers across multiple Indian operational hubs (Bengaluru, Hyderabad, Pune, Coimbatore)</li>
+                        <li>Overcome the resource-heavy overhead and slow turnaround of traditional campus hiring models</li>
+                        <li>Fairly and accurately evaluate massive volumes of early-career applicants against rigorous technical benchmarks</li>
+                    </ul>
+                    <h4>Our solutions</h4>
+                    <ul>
+                        <li>Implemented an end-to-end, digital-first hiring framework powered by automated candidate engagement</li>
+                        <li>Integrated standardized online coding and aptitude evaluations to filter applicants objectively at scale</li>
+                        <li>Structured high-impact apprentice programs and off-campus recruitment drives supported by streamlined workflow automation</li>
+                    </ul>
+                    <h4>The impact</h4>
+                    <ul>
+                        <li>Successfully onboarded hundreds of high-potential early-career engineers across target technology corridors</li>
+                        <li>Significantly decreased time-to-hire while eliminating bias through standardized assessment metrics</li>
+                        <li>Established a repeatable, scalable model for ongoing workforce expansion in India</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 3 Modal -->
+        <div class="modal-overlay" id="cs-consulting">
+            <div class="modal-box">
+                <button class="modal-close">×</button>
+                <div class="cs-section">
+                    <h3 class="gradient-text">How a global consulting leader became an employer of choice for interns in India</h3>
+                    <h4>The challenge</h4>
+                    <ul>
+                        <li>Attract premier engineering talent and build brand equity for the firm's Talent & Transformation (T&T) practice</li>
+                        <li>Streamline and modernize the summer internship selection process across Tier-1 institutions</li>
+                        <li>Effectively screen and assess thousands of applicants without creating recruiter bottlenecks</li>
+                    </ul>
+                    <h4>Our solutions</h4>
+                    <ul>
+                        <li>Architected an interactive, customized hackathon serving as both an employer branding platform and a discovery funnel</li>
+                        <li>Launched dedicated microsites and interactive digital assessments to engage high-aptitude teams</li>
+                        <li>Managed structured, multi-stage rounds culminating in live virtual evaluations with leadership panels</li>
+                    </ul>
+                    <h4>The impact</h4>
+                    <ul>
+                        <li>Surpassed registration targets by 17% with 11,728 registrations and 124,500+ microsite impressions</li>
+                        <li>Mobilized 4,460 eligible participants into 1,000 competitive teams, identifying the top 15 finalist teams</li>
+                        <li>Achieved a 100% conversion rate with all 65 shortlisted finalists accepting internship offers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 4 Modal -->
+        <div class="modal-overlay" id="cs-crossborder">
+            <div class="modal-box">
+                <button class="modal-close">×</button>
+                <div class="cs-section">
+                    <h3 class="gradient-text">How Asia’s leading e-commerce company found its supply chain leader through a cross-border search</h3>
+                    <h4>The challenge</h4>
+                    <ul>
+                        <li>Recruit a transformative Head of Supply Chain capable of managing hyper-scale logistics and multi-market expansion</li>
+                        <li>Severe shortage of qualified domestic leaders combining FMCG supply chain rigor with digital commerce agility</li>
+                        <li>Required executive gravitas, multi-geography stakeholder management, and deep domain expertise</li>
+                    </ul>
+                    <h4>Our solutions</h4>
+                    <ul>
+                        <li>Executed an extensive cross-border executive search strategy led by Longhouse Consulting</li>
+                        <li>Mapped leadership talent across top 10 global FMCG brands, e-commerce conglomerates, and logistics specialists</li>
+                        <li>Conducted confidential behavioral and strategic leadership calibrations before presenting shortlisted finalists</li>
+                    </ul>
+                    <h4>The impact</h4>
+                    <ul>
+                        <li>Successfully placed an exceptional cross-border supply chain executive within target executive search timelines</li>
+                        <li>Accelerated warehouse automation, regional fulfillment efficiency, and supply chain resilience</li>
+                        <li>Delivered smooth executive onboarding and long-term organizational alignment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Case Study 5 Modal -->
+        <div class="modal-overlay" id="cs-interview-fraudproof">
+            <div class="modal-box">
+                <button class="modal-close">×</button>
+                <div class="cs-section">
+                    <h3 class="gradient-text">A top digital engineering MNC executes 100% fraud-proof interviews across 4 time zones</h3>
+                    <h4>The challenge</h4>
+                    <ul>
+                        <li>Execute high-velocity technical evaluations for over 10,000 monthly candidates spread across 4 distinct global time zones</li>
+                        <li>Eliminate candidate impersonation, proxy interviewing, and cheating in remote coding rounds</li>
+                        <li>Overcome scheduling logistics and maintain comprehensive audit trails for enterprise compliance</li>
+                    </ul>
+                    <h4>Our solutions</h4>
+                    <ul>
+                        <li>Deployed HirePro’s AI-powered automated video interviewing and proctoring platform</li>
+                        <li>Integrated real-time coding sandboxes with dual-camera AI face detection and audio proctoring</li>
+                        <li>Automated interview scheduling, calendar synchronization, and digital evaluator scorecards</li>
+                    </ul>
+                    <h4>The impact</h4>
+                    <ul>
+                        <li>Seamlessly handled 10,000+ monthly interviews (over 100,000 annually) across 4 global time zones</li>
+                        <li>Achieved a 100% fraud-free interview environment with zero compliance or impersonation breaches</li>
+                        <li>Expanded interview processing capacity by 50% while archiving 100% tamper-proof video audit records</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Policy Modals -->
+        <div class="modal-overlay" id="modal-privacy">
+            <div class="modal-box">
+                <button class="modal-close">×</button>
+                <h3 class="gradient-text" style="text-align: center; display: block; margin-bottom: 20px; font-size: 24px;">Privacy Policy</h3>
+                <div class="cs-section">
+                    <p><strong>1. Information Collection:</strong> We collect personal information (like name, email, phone number, and CVs) when you submit forms on our site. This is used solely for recruitment and business communication purposes.</p>
+                    <p><strong>2. Data Protection and GDPR:</strong> We comply with UAE data protection laws and GDPR guidelines. Your data is stored securely and never sold to third parties. You have the right to access, rectify, or erase your personal data.</p>
+                    <p><strong>3. Third-Party Sharing:</strong> Data may be shared with trusted clients for recruitment purposes only, with your explicit consent.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal-overlay" id="modal-terms">
+            <div class="modal-box">
+                <button class="modal-close">×</button>
+                <h3 class="gradient-text" style="text-align: center; display: block; margin-bottom: 20px; font-size: 24px;">Terms of Service</h3>
+                <div class="cs-section">
+                    <p><strong>1. Acceptance of Terms:</strong> By accessing this website, you agree to be bound by these Terms of Service, all applicable laws and regulations, and agree that you are responsible for compliance.</p>
+                    <p><strong>2. Service Description:</strong> Careernet provides talent solutions, recruitment, and employer branding services. The information on this site is for general informational purposes.</p>
+                    <p><strong>3. User Conduct:</strong> You agree not to use the website for any unlawful purpose or in any way that could damage, disable, or impair the site.</p>
+                    <p><strong>4. Variations and Amendments:</strong> We reserve the right to update or modify these Terms of Service at any time. You are encouraged to review this page periodically, as continued use of the website constitutes acceptance of any revised terms.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Initialization: AOS Animations
+            AOS.init({ duration: 1500, easing: 'ease-in-out', once: true, offset: 30 });
+
+            // Stats Counters
+            const counters = document.querySelectorAll('.counter');
+            const counterObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = +counter.getAttribute('data-target');
+                        let count = 0;
+                        const updateCount = () => {
+                            const increment = target / 50;
+                            if (count < target) { 
+                                count += increment; 
+                                counter.innerText = Math.ceil(count).toLocaleString(); 
+                                setTimeout(updateCount, 30); 
+                            } else { 
+                                counter.innerText = target.toLocaleString(); 
+                            }
+                        };
+                        updateCount();
+                        counterObserver.unobserve(counter);
+                    }
+                });
+            }, { threshold: 0.5 });
+            counters.forEach(counter => { counterObserver.observe(counter); });
+
+            // Navigation Toggle
+            const toggle = document.getElementById('mobileToggle');
+            const menu = document.getElementById('navMenu');
+            
+            const closeMobileMenu = () => {
+                toggle.classList.remove('active');
+                menu.classList.remove('active');
+                document.body.style.overflow = '';
+            };
+
+            toggle.addEventListener('click', () => {
+                toggle.classList.toggle('active');
+                menu.classList.toggle('active');
+                document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+            });
+
+            // Close mobile menu on link click
+            document.querySelectorAll('.nav-menu .nav-link, .nav-menu .btn').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 992) {
+                        closeMobileMenu();
+                    }
+                });
+            });
+
+            // Navbar Scroll Effect
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                    navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.05)';
+                    navbar.style.padding = '10px 0';
+                } else {
+                    navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                    navbar.style.boxShadow = 'none';
+                    navbar.style.padding = '15px 0';
+                }
+            });
+
+            // Swiper Carousel Initialization
+            document.querySelectorAll('.init-swiper').forEach(function(swiperElement) {
+                let config = JSON.parse(swiperElement.querySelector('.swiper-config').innerHTML.trim());
+                config.observer = true; 
+                config.observeParents = true;
+                if (config.autoplay) {
+                    config.on = {
+                        init: function() {
+                            this.el.addEventListener('mouseenter', () => { this.autoplay.stop(); });
+                            this.el.addEventListener('mouseleave', () => { this.autoplay.start(); });
+                        }
+                    }
+                }
+                new Swiper(swiperElement, config);
+            });
+
+            // Interactive Lightbox Gallery with Navigation
+            const awardItems = [
+                { src: "img/GPTW_2026-2027_Logo_SVG.webp", alt: "Great Place To Work" },
+                { src: "img/LinkedIn_Talent_2025-Finalist.webp", alt: "LinkedIn Talent Awards" },
+                { src: "img/ISO27001_2013_GDPR_Certified_Company.webp", alt: "ISO 27001 & GDPR Certified Company" },
+                { src: "img/ET.png", alt: "The Economic Times AI Awards 2025" },
+                { src: "img/Eco.png", alt: "The Times Group Best Organization for Women 2024" },
+                { src: "img/BB.png", alt: "The Economic Times Best Brand 2022" }
+            ];
+
+            let currentAwardIndex = 0;
+            const zoomOverlay = document.getElementById('modal-image-zoom');
+            const zoomImg = document.getElementById('zoomed-award-img');
+            const zoomCaption = document.getElementById('zoomed-award-caption');
+            const zoomPrevBtn = document.getElementById('zoomPrevBtn');
+            const zoomNextBtn = document.getElementById('zoomNextBtn');
+            const zoomCloseBtn = document.getElementById('zoomCloseBtn');
+
+            function updateZoomedImage(index) {
+                currentAwardIndex = (index + awardItems.length) % awardItems.length;
+                const current = awardItems[currentAwardIndex];
+                zoomImg.style.opacity = '0';
+                setTimeout(() => {
+                    zoomImg.src = current.src;
+                    zoomImg.alt = current.alt;
+                    if (zoomCaption) {
+                        zoomCaption.innerText = `${currentAwardIndex + 1} / ${awardItems.length} — ${current.alt}`;
+                    }
+                    zoomImg.style.opacity = '1';
+                }, 150);
+            }
+
+            document.querySelectorAll('.zoomable-award').forEach(img => {
+                img.addEventListener('click', function() {
+                    const clickedSrc = this.getAttribute('src');
+                    const foundIndex = awardItems.findIndex(item => item.src === clickedSrc);
+                    updateZoomedImage(foundIndex !== -1 ? foundIndex : 0);
+                    zoomOverlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            if (zoomPrevBtn) {
+                zoomPrevBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    updateZoomedImage(currentAwardIndex - 1);
+                });
+            }
+
+            if (zoomNextBtn) {
+                zoomNextBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    updateZoomedImage(currentAwardIndex + 1);
+                });
+            }
+
+            if (zoomCloseBtn) {
+                zoomCloseBtn.addEventListener('click', () => {
+                    zoomOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            }
+
+            if (zoomOverlay) {
+                zoomOverlay.addEventListener('click', (e) => {
+                    if (e.target === zoomOverlay) {
+                        zoomOverlay.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+
+            // Keyboard navigation for Lightbox
+            document.addEventListener('keydown', (e) => {
+                if (zoomOverlay && zoomOverlay.classList.contains('active')) {
+                    if (e.key === 'ArrowLeft') {
+                        updateZoomedImage(currentAwardIndex - 1);
+                    } else if (e.key === 'ArrowRight') {
+                        updateZoomedImage(currentAwardIndex + 1);
+                    } else if (e.key === 'Escape') {
+                        zoomOverlay.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                }
+            });
+
+            // Universal Modals / Popups Click Trigger
+            const openBtns = document.querySelectorAll('.popup-trigger');
+            const closeBtns = document.querySelectorAll('.modal-close');
+            
+            openBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    let targetId = btn.hasAttribute('data-modal') ? btn.getAttribute('data-modal') : btn.getAttribute('href').substring(1);
+                    const modal = document.getElementById(targetId);
+                    if (modal) { 
+                        modal.classList.add('active'); 
+                        document.body.style.overflow = 'hidden'; 
+                    }
+                });
+            });
+
+            closeBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const overlay = btn.closest('.modal-overlay');
+                    if (overlay) overlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+            
+            window.addEventListener('click', (e) => {
+                if (e.target.classList.contains('modal-overlay')) { 
+                    e.target.classList.remove('active'); 
+                    document.body.style.overflow = ''; 
+                }
+            });
+
+            // Dynamic Year in Footer
+            const yearElement = document.getElementById('dynamicYear');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+
+            // Interactive Timeline Animation Engine
+            (function(){
+                const logos = {
+                    careernet: "https://testing.careernet.ae/wp-content/uploads/2025/03/Careernet-LOGO-Web.svg",
+                    hirepro: "https://testing.careernet.ae/wp-content/uploads/2026/05/HirePro_Full-color.svg",
+                    longhouse: "https://testing.careernet.ae/wp-content/uploads/2026/05/LH-Logo-without-by-line.svg",
+                    mycareernet: "https://testing.careernet.ae/wp-content/uploads/2026/05/MYCN_Color_Without_Byline.svg"
+                };
+
+                const timelineData = [
+                    { year: "1999", title: "Inception of Careernet with a focus on holistic talent solutions", desc: "", logo: logos.careernet },
+                    { year: "2004", title: "Inception of HirePro", desc: "", logo: logos.hirepro },
+                    { year: "2009", title: "Executive search and leadership advisory", desc: "", logo: logos.longhouse },
+                    { year: "2014", title: "Started IndiQube", desc: "(now a listed leader in India's co-working space)", logo: null },
+                    { year: "2015", title: "Professional staffing services and solutions", desc: "", logo: logos.careernet },
+                    { year: "2019", title: "Expanded our global footprint with entry into the US market", desc: "", logo: null },
+                    { year: "2022", title: "Employer branding and communities’ engagement", desc: "", logo: logos.mycareernet },
+                    { year: "Today", title: "1,000+ active clients, 2K+ employees", desc: "10+ offices, 10M SFT of workspace", logo: null, isToday: true }
+                ];
+
+                const track = document.getElementById('track');
+                if(!track) return;
+
+                timelineData.forEach((item, index) => {
+                    const div = document.createElement('div');
+                    div.className = `tl-item ${item.isToday ? 'today' : ''}`;
+                    
+                    const logoHtml = item.logo ? `<div class="tl-logo-box"><img src="${item.logo}" alt="logo"></div>` : '';
+                    const descHtml = item.desc ? `<p>${item.desc}</p>` : '';
+
+                    let pathD = "";
+                    if (index % 2 === 0) {
+                        pathD = "M 0 0 Q 140 85 280 0"; 
+                    } else {
+                        pathD = "M 0 80 Q 140 -5 280 80"; 
+                    }
+
+                    const connectorHTML = index < timelineData.length - 1 ? `
+                        <div class="tl-connector">
+                            <svg viewBox="0 0 280 80" preserveAspectRatio="none">
+                                <path d="${pathD}" class="anim-path"></path>
+                            </svg>
+                        </div>
+                    ` : '';
+
+                    div.innerHTML = `
+                        <div class="tl-node"><span>${item.year}</span></div>
+                        
+                        <div class="tl-content-wrapper">
+                            <span class="tl-line"></span>
+                            ${logoHtml}
+                            <div class="tl-text">
+                                <h3>${item.title}</h3>
+                                ${descHtml}
+                            </div>
+                        </div>
+
+                        ${connectorHTML}
+                    `;
+                    track.appendChild(div);
+                });
+
+                function playAnimations() {
+                    const items = document.querySelectorAll('.tl-item');
+                    const paths = document.querySelectorAll('.anim-path');
+                    let delayCounter = 0;
+
+                    items.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add('active');
+                        }, delayCounter);
+
+                        if (index < paths.length) {
+                            const path = paths[index];
+                            if(path && path.getTotalLength){
+                                try {
+                                    const length = path.getTotalLength();
+                                    path.style.strokeDasharray = length;
+                                    path.style.strokeDashoffset = length;
+                                    path.style.transition = 'none';
+                                    path.getBoundingClientRect(); 
+                                    path.style.transition = 'stroke-dashoffset 0.6s ease-in-out';
+                                    setTimeout(() => { path.style.strokeDashoffset = '0'; }, delayCounter + 300);
+                                } catch (e) {
+                                    // Failsafe for hidden SVG calculations
+                                }
+                            }
+                        }
+                        delayCounter += 200;
+                    });
+                }
+
+                const observer = new IntersectionObserver((entries) => {
+                    if(entries[0].isIntersecting) {
+                        playAnimations();
+                        observer.disconnect();
+                    }
+                }, { threshold: 0.15 });
+                
+                const wrapper = document.querySelector('.timeline-c-shape-wrapper');
+                if(wrapper) observer.observe(wrapper);
+
+            })();
+
+        });
+    </script>
+</body>
+</html>
