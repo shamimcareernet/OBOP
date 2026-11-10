@@ -379,7 +379,7 @@
         }
         @media (max-width: 767px) {
             .cn-infographic-banner { padding: 30px 0 24px; }
-            .cn-infographic-mobile-title { font-size: 22px; margin-bottom: 16px; padding: 0 10px; }
+            .cn-infographic-mobile-title { font-size: 22px; margin-bottom: 7px; padding: 0 10px; }
         }
 
         /* Animated recruitment lifecycle – integrated inline SVG */
@@ -711,6 +711,9 @@
         /* ==========================================================================
            12. Global Footprint
            ========================================================================== */
+           section#global-footprint {
+    background: #fff !important;
+}
         .footprint-wrapper {
             display: flex;
             align-items: center;
@@ -749,6 +752,9 @@
         /* ==========================================================================
            13. Industries We Serve: Original card design, 5 items per desktop row
            ========================================================================== */
+           section#expertise {
+    background-image: radial-gradient(ellipse at 8% 14%, rgba(0, 126, 173, .075) 0%, rgba(0, 126, 173, 0) 34%), radial-gradient(ellipse at 92% 84%, rgba(52, 195, 232, .065) 0%, rgba(52, 195, 232, 0) 32%), linear-gradient(135deg, #ffffff 0%, #f8fbfd 48%, #f1f6f9 100%) !important;
+}
         .grid-industries {
             display: grid;
             grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -776,8 +782,8 @@
             width: 100%;
         }
         .expertise-card .cn-expertise-icon-box { 
-            width: 44px; 
-            height: 44px; 
+            width: 32px; 
+            height: 36px; 
             flex-shrink: 0; 
             background: var(--premium-gradient) !important; 
             border-radius: 10px; 
@@ -856,12 +862,12 @@
         .cn-client-marquee {
             width: 100%;
             overflow: hidden;
-            padding: 24px 0;
+            padding: 60px 0px 44px 0px;
             border-top: 1px solid rgba(0,0,0,0.05);
             border-bottom: 1px solid rgba(0,0,0,0.05);
             background: #ffffff;
         }
-        .cn-client-marquee-row { width: 100%; overflow: hidden; margin: 12px 0; }
+        .cn-client-marquee-row { width: 100%; overflow: hidden; margin: 30px 0; }
         .cn-client-marquee-track {
             display: flex;
             align-items: center;
@@ -928,7 +934,7 @@
             transition: transform 0.3s ease;
         }
         .awards-marquee img:hover { transform: scale(1.06); }
-        .cn-awards-bg { background: url("https://testing.careernet.ae/wp-content/uploads/2026/09/Awards_BG.svg") center center / cover no-repeat; min-height: 320px; }
+        .cn-awards-bg { background: url("https://careernet.in/wp-content/uploads/2026/11/Awards_BG.svg") center center / cover no-repeat; min-height: 320px; }
         .cn-awards-bg-overlay { position: absolute; inset: 0; background: rgba(255,255,255,.12); pointer-events: none; }
 
         @media (max-width: 768px) {
@@ -1049,6 +1055,7 @@
                 radial-gradient(ellipse at 8% 14%, rgba(0, 126, 173, .075) 0%, rgba(0, 126, 173, 0) 34%),
                 radial-gradient(ellipse at 92% 84%, rgba(52, 195, 232, .065) 0%, rgba(52, 195, 232, 0) 32%),
                 linear-gradient(135deg, #ffffff 0%, #f8fbfd 48%, #f1f6f9 100%) !important;
+                padding: 70px 0px 40px 0px;
         }
         #leadership .leadership-swiper { padding: 10px 4px 45px; overflow: hidden; }
         
@@ -1087,7 +1094,7 @@
         .leader-card:hover .leader-img { transform: scale(1.04); }
         .leader-info { padding: 20px 16px; display: flex; flex-direction: column; flex-grow: 1; }
         .leader-info h4 { font-size: 19px; font-weight: 700; color: var(--dark-blue); margin-bottom: 4px; }
-        .leader-role { font-size: 13.5px; font-weight: 700; color: var(--primary-blue); text-transform: none; letter-spacing: 0; margin: 0; }
+        .leader-role { font-size: 13.5px; font-weight: 700; color: var(--primary-blue); text-transform: uppercase; letter-spacing: 0; margin: 0; }
 
         @media (max-width: 767px) {
             #leadership { padding: 42px 0 !important; }
@@ -1099,8 +1106,8 @@
                 box-shadow: 0 4px 14px rgba(16, 55, 78, 0.08) !important;
             }
             #leadership .leader-img-wrap {
-                aspect-ratio: 1 / 0.88 !important;
-                max-height: 170px !important;
+                /*aspect-ratio: 1 / 0.88 !important;*/
+                max-height: 240px !important;
             }
             #leadership .leader-info {
                 padding: 12px 10px !important;
@@ -1148,6 +1155,22 @@
         .cn-contact-final-inner {
             position: relative;
             z-index: 2;
+        }
+
+        .cn-contact-inline-form-wrap {
+            width: 100%;
+            max-width: 760px;
+            margin: 28px auto 0;
+            padding: 30px 30px 24px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 18px 45px rgba(0,0,0,.18);
+            text-align: left;
+        }
+        .cn-contact-inline-form-wrap .cn-cf7-privacy { color: #71818c; }
+        .cn-contact-inline-form-wrap .cn-cf7-submit-row { justify-content: center; }
+        @media (max-width: 767px) {
+            .cn-contact-inline-form-wrap { margin-top: 20px; padding: 22px 16px 18px; border-radius: 12px; }
         }
 
         .contact-main-cta {
@@ -1297,7 +1320,7 @@
             .cn-contact-form-modal { width: 100%; max-width: 100%; max-height: 92vh; padding: 52px 16px 18px; border-radius: 14px; }
             .cn-cf7-grid { grid-template-columns: 1fr; gap: 13px; }
             .cn-cf7-field-full { grid-column: auto; }
-            .cn-cf7-submit { width: 100%; }
+            .cn-cf7-submit { width: 60%; }
         }
 
         /* ==========================================================================
@@ -2612,7 +2635,39 @@
             <div class="cn-contact-final-heading">
                 <h2 style="color: white; margin-bottom: 10px;">We are one. On for tomorrow.</h2>
                 <p style="color: rgba(255, 255, 255, 0.92); font-size: 17px; margin-bottom: 24px; font-weight: 400;">Let’s make great talent happen together</p>
-                <a class="contact-main-cta popup-trigger" href="#modal-contact-form">Contact us</a>
+                <!-- Contact us CTA removed from this section; inline enquiry form is displayed instead. -->
+            </div>
+            <div class="cn-contact-inline-form-wrap">
+                <form id="careernet-cf7-inline-form" class="cn-cf7-form" novalidate>
+                    <div class="cn-cf7-grid">
+                        <div class="cn-cf7-field">
+                            <label for="cn-cf7-inline-name">Name *</label>
+                            <input id="cn-cf7-inline-name" name="your-name" type="text" placeholder="Your name" autocomplete="name" maxlength="120" required>
+                        </div>
+                        <div class="cn-cf7-field">
+                            <label for="cn-cf7-inline-phone">Phone number *</label>
+                            <input id="cn-cf7-inline-phone" name="phonetext-797" type="tel" placeholder="Phone number" autocomplete="tel" inputmode="tel" maxlength="30" required>
+                        </div>
+                        <div class="cn-cf7-field">
+                            <label for="cn-cf7-inline-email">E-mail *</label>
+                            <input id="cn-cf7-inline-email" name="your-email" type="email" placeholder="" autocomplete="email" maxlength="160" required>
+                        </div>
+                        <div class="cn-cf7-field">
+                            <label for="cn-cf7-inline-company">Company name *</label>
+                            <input id="cn-cf7-inline-company" name="company-name" type="text" placeholder="Company name" autocomplete="organization" maxlength="160" required>
+                        </div>
+                        <div class="cn-cf7-field cn-cf7-field-full">
+                            <label for="cn-cf7-inline-message">Message *</label>
+                            <textarea id="cn-cf7-inline-message" name="your-message" rows="5" placeholder="Tell us how we can help" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+                    <div class="cn-cf7-submit-row">
+                        <button id="cn-cf7-inline-submit" class="btn btn-primary cn-cf7-submit" type="submit">Submit</button>
+                    </div>
+                    <div id="cn-cf7-inline-status" class="cn-cf7-status" role="status" aria-live="polite"></div>
+                    <p class="cn-cf7-privacy">Your information will be used only to respond to your enquiry.</p>
+                </form>
+            </div>
             </div>
         </div>
     </section>
@@ -2991,78 +3046,76 @@
             });
 
             // Careernet Contact Form 7 REST API integration (Form ID: 7804)
-            (function initCareernetCF7ApiForm() {
-                const form = document.getElementById('careernet-cf7-form');
-                if (!form) return;
+            (function initCareernetCF7ApiForms() {
+                const forms = document.querySelectorAll('.cn-cf7-form');
+                if (!forms.length) return;
 
-                const submitButton = document.getElementById('cn-cf7-submit');
-                const statusBox = document.getElementById('cn-cf7-status');
                 const apiBase = 'https://careernet.in/wp-json/contact-form-7/v1/contact-forms/7804';
-
                 let cf7Locale = 'en_US';
                 let cf7Version = '';
 
-                const showStatus = (message, type) => {
-                    statusBox.textContent = message;
-                    statusBox.className = 'cn-cf7-status is-visible ' + (type === 'success' ? 'is-success' : 'is-error');
-                };
-
-                const clearStatus = () => {
-                    statusBox.textContent = '';
-                    statusBox.className = 'cn-cf7-status';
-                };
-
-                // Read the public form metadata so the request uses the form's configured locale.
                 fetch(apiBase, { method: 'GET', credentials: 'omit' })
                     .then(response => response.ok ? response.json() : null)
                     .then(data => {
                         if (data && data.locale) cf7Locale = data.locale;
                         if (data && data.version) cf7Version = data.version;
                     })
-                    .catch(() => { /* The submission endpoint will return the actual error if unavailable. */ });
+                    .catch(() => { /* Submission will report any API/network error. */ });
 
-                form.addEventListener('submit', async function (event) {
-                    event.preventDefault();
-                    clearStatus();
+                forms.forEach(form => {
+                    const submitButton = form.querySelector('.cn-cf7-submit');
+                    const statusBox = form.querySelector('.cn-cf7-status');
+                    const unitTag = form.id === 'careernet-cf7-inline-form' ? 'wpcf7-f7804-o2' : 'wpcf7-f7804-o1';
 
-                    if (!form.reportValidity()) return;
+                    const showStatus = (message, type) => {
+                        statusBox.textContent = message;
+                        statusBox.className = 'cn-cf7-status is-visible ' + (type === 'success' ? 'is-success' : 'is-error');
+                    };
+                    const clearStatus = () => {
+                        statusBox.textContent = '';
+                        statusBox.className = 'cn-cf7-status';
+                    };
 
-                    submitButton.disabled = true;
-                    submitButton.textContent = 'Submitting…';
+                    form.addEventListener('submit', async function (event) {
+                        event.preventDefault();
+                        clearStatus();
+                        if (!form.reportValidity()) return;
 
-                    try {
-                        const formData = new FormData(form);
-                        formData.append('_wpcf7', '7804');
-                        if (cf7Version) formData.append('_wpcf7_version', cf7Version);
-                        formData.append('_wpcf7_locale', cf7Locale);
-                        formData.append('_wpcf7_unit_tag', 'wpcf7-f7804-o1');
-                        formData.append('_wpcf7_container_post', '0');
+                        submitButton.disabled = true;
+                        submitButton.textContent = 'Submitting…';
+                        try {
+                            const formData = new FormData(form);
+                            formData.append('_wpcf7', '7804');
+                            if (cf7Version) formData.append('_wpcf7_version', cf7Version);
+                            formData.append('_wpcf7_locale', cf7Locale);
+                            formData.append('_wpcf7_unit_tag', unitTag);
+                            formData.append('_wpcf7_container_post', '0');
 
-                        const response = await fetch(apiBase + '/feedback', {
-                            method: 'POST',
-                            body: formData,
-                            credentials: 'omit',
-                            headers: { 'Accept': 'application/json' }
-                        });
-
-                        const result = await response.json();
-                        if (result.status === 'mail_sent') {
-                            showStatus('Thank you! Your enquiry has been submitted successfully. Our team will get back to you.', 'success');
-                            form.reset();
-                        } else {
-                            const detail = result.invalid_fields && result.invalid_fields.length
-                                ? result.invalid_fields.map(field => field.message).join(' ')
-                                : (result.message || 'Your enquiry could not be submitted. Please check your details and try again.');
-                            showStatus(detail, 'error');
-                            console.error('Contact Form 7 response:', result);
+                            const response = await fetch(apiBase + '/feedback', {
+                                method: 'POST',
+                                body: formData,
+                                credentials: 'omit',
+                                headers: { 'Accept': 'application/json' }
+                            });
+                            const result = await response.json();
+                            if (result.status === 'mail_sent') {
+                                showStatus('Thank you! Your enquiry has been submitted successfully. Our team will get back to you.', 'success');
+                                form.reset();
+                            } else {
+                                const detail = result.invalid_fields && result.invalid_fields.length
+                                    ? result.invalid_fields.map(field => field.message).join(' ')
+                                    : (result.message || 'Your enquiry could not be submitted. Please check your details and try again.');
+                                showStatus(detail, 'error');
+                                console.error('Contact Form 7 response:', result);
+                            }
+                        } catch (error) {
+                            showStatus(error.message || 'Unable to submit your enquiry right now. Please try again.', 'error');
+                            console.error('Contact Form 7 submission error:', error);
+                        } finally {
+                            submitButton.disabled = false;
+                            submitButton.textContent = 'Submit';
                         }
-                    } catch (error) {
-                        showStatus(error.message || 'Unable to submit your enquiry right now. Please try again.', 'error');
-                        console.error('Contact Form 7 submission error:', error);
-                    } finally {
-                        submitButton.disabled = false;
-                        submitButton.textContent = 'Submit';
-                    }
+                    });
                 });
             })();
 
@@ -3172,7 +3225,7 @@
                     connector.removeAttribute('transform');
                     connector.classList.add('mobile-hide-connector');
                 }
-                if (services) services.setAttribute('transform', 'translate(-1723 1200) scale(1.5)');
+                if (services) services.setAttribute('transform', 'translate(-1723 1050) scale(1.5)');
             } else {
                 svg.setAttribute('viewBox', '0 0 1920 1080');
                 svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
